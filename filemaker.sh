@@ -22,7 +22,7 @@ TOTAL_BUDGET_MB="${TOTAL_BUDGET_MB:-900}" # total repo cap (keep < GitHub soft 1
 SMALL_HEADROOM_MB="${SMALL_HEADROOM_MB:-80}" # reserved for small files & overhead
 
 # -------- Level scaling --------
-LEVEL="${LEVEL:-2}"
+LEVEL="${LEVEL:-1}"
 if ! [[ "$LEVEL" =~ ^[1-4]$ ]]; then
   echo "LEVEL must be 1..4 (got '$LEVEL'). Example: LEVEL=3 $0" >&2
   exit 1
